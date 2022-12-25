@@ -43,7 +43,7 @@ export default function Expenseform(props) {
 
         const expenseData = {
             title: enteredData.enteredTitle,
-            amount: enteredData.enteredAmount,
+            amount: +enteredData.enteredAmount,
             date: new Date(enteredData.enteredDate)
         };
         // console.log(expenseData);
@@ -80,7 +80,7 @@ export default function Expenseform(props) {
                     <label>Date</label>
                     <input
                         type='date'
-                        min="2020-01-01"
+                        min="2019-01-01"
                         max="2022-12-31"
                         onChange={dateChange}
                         value={enteredData.enteredDate}
