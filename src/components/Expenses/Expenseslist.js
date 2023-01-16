@@ -10,15 +10,24 @@ export default function Expenselist(props) {
         return <h2 className="expenses-list__fallback">Found No expenses.</h2>
     }
 
+    // function expenseDel(key){
+    //     const fil = props.items.filter((ele)=>{
+    //         return ele.id !==key
+    //     }) 
+    //     props.set(fil)
+    // }
+
     return (
         <ul className="expenses-list">
             {props.items.map(expense => {
+                console.log(expense.id);
                 return (
                     <ExpenseItem
-                        key={expense.id}
+                        id={expense.id}
                         title={expense.title}
                         amount={expense.amount}
                         date={expense.date}
+                        set={props.set}
                     />
                 )
             })}

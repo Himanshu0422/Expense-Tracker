@@ -44,10 +44,19 @@ export default function App() {
 		})
 	}
 
+	const deleteExp = (key)=>{
+		// console.log(key);
+		var arr = expenses.filter((ele)=>{
+			return ele.id !== key
+		})
+
+		setExpenses(arr);
+	}
+
 	return (
 		<div>
 			<Newexpense onAddExpense={addExpenseHandler} />
-			<Expenses items={expenses} />
+			<Expenses items={expenses} set={deleteExp} />
 		</div>
 	);
 }

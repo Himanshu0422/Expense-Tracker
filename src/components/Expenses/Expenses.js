@@ -21,7 +21,7 @@ export default function Expenses(props) {
         <Card className='expenses'>
             <ExpensesFilter selected={filteredYear} onChangeFilter={filterChangeHandler} />
             <Expenseschart expenses = {filteredExpenses}/>
-            <Expenselist items= {filteredExpenses}/>
+            <Expenselist items= {filteredExpenses} set={props.set} />
         </Card>
     )
 }
