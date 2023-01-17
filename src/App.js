@@ -34,8 +34,6 @@ export default function App() {
 	const [expenses, setExpenses] = React.useState(dummy_expenses);
 
 	const addExpenseHandler = expense => {
-		// console.log('In App.js');
-		// console.log(expense);
 		setExpenses((prevExpenses) => {
 			return [
 				expense,
@@ -45,7 +43,6 @@ export default function App() {
 	}
 
 	const deleteExp = (key)=>{
-		// console.log(key);
 		var arr = expenses.filter((ele)=>{
 			return ele.id !== key
 		})
