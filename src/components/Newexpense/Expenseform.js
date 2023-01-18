@@ -3,10 +3,6 @@ import './Expenseform.css';
 
 export default function Expenseform(props) {
 
-    // const [enteredTitle, setEnteredTitle] = React.useState('');
-    // const [enteredAmout, setEnteredAmount] = React.useState('');
-    // const [enteredDate, setEnteredDate] = React.useState('');
-
     const [enteredData, setEnteredData] = React.useState({
         enteredTitle: '',
         enteredAmount: '',
@@ -45,8 +41,7 @@ export default function Expenseform(props) {
             title: enteredData.enteredTitle,
             amount: +enteredData.enteredAmount,
             date: new Date(enteredData.enteredDate)
-        };
-        // console.log(expenseData);
+        }
         props.onSaveExpenseData(expenseData);
         setEnteredData({
             enteredTitle: '',

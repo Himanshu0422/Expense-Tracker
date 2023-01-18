@@ -34,6 +34,7 @@
     border: 1px solid white;
     padding: 0.5rem;
     border-radius: 12px;
+    margin-right: 10px;
 }
 
 @media (min-width: 580px) {
@@ -52,4 +53,40 @@
         font-size: 1.25rem;
         padding: 0.5rem 1.5rem;
     }
+}
+
+.edit-button {
+    background: #34d9bd;
+    background-image: -webkit-linear-gradient(top, #34d9bd, #2980b9);
+    background-image: -moz-linear-gradient(top, #34d9bd, #2980b9);
+    background-image: -ms-linear-gradient(top, #34d9bd, #2980b9);
+    background-image: -o-linear-gradient(top, #34d9bd, #2980b9);
+    background-image: linear-gradient(to bottom, #34d9bd, #2980b9);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: none;
+    margin-right: 10px;
+}
+
+.edit-button:hover {
+    background: #34d9bd;
+    background-image: -webkit-linear-gradient(top, #34d9bd, #2980b9);
+    background-image: -moz-linear-gradient(top, #34d9bd, #2980b9);
+    background-image: -ms-linear-gradient(top, #34d9bd, #2980b9);
+    background-image: -o-linear-gradient(top, #34d9bd, #2980b9);
+    background-image: linear-gradient(to bottom, #34d9bd, #2980b9);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
 }
