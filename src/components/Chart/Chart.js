@@ -5,7 +5,6 @@ import './Chart.css'
 export default function Chart(props) {
 
     const dataPointValues = props.dataPoints.map(dataPoint => dataPoint.value).reduce((a,b) => a+b);
-    // const totalMax = dataPointValues.map(val => val).reduce((a,b) => a+b);
     
     return (
         <div className="chart">
