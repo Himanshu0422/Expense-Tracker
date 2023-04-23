@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import './Expenseform.css';
+import expenseContext from "../../store/expenseContext";
 
 export default function Expenseform(props) {
-
+    const expensectx = useContext(expenseContext);
     const [enteredData, setEnteredData] = React.useState({
         enteredTitle: '',
         enteredAmount: '',
@@ -40,9 +41,10 @@ export default function Expenseform(props) {
         const expenseData = {
             title: enteredData.enteredTitle,
             amount: +enteredData.enteredAmount,
-            date: new Date(enteredData.enteredDate)
+            date: new Date(enteredData.enteredDate),
+            id: Math.random().toString()
         }
-        props.onSaveExpenseData(expenseData);
+        expensectx.addExpense(expenseData)
         setEnteredData({
             enteredTitle: '',
             enteredAmount: '',
