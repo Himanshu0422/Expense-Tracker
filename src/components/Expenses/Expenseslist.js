@@ -11,7 +11,6 @@ export default function Expenselist(props) {
     return (
         <ul className="expenses-list">
             {props.items.map(expense => {
-                console.log(expense.id);
                 return (
                     <ExpenseItem
                         id={expense.id}
@@ -20,6 +19,7 @@ export default function Expenselist(props) {
                         date={expense.date}
                         set={props.set}
                         key={expense.id}
+                        fetchExpense={props.fetchExpense}
                     />
                 )
             })}
