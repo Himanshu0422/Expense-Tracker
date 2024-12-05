@@ -8,7 +8,7 @@ import expenseContext from "../../store/expenseContext";
 
 export default function Expenses(props) {
     const expensectx = useContext(expenseContext);
-    const [filteredYear, setFilteredYear] = React.useState('2023');
+    const [filteredYear, setFilteredYear] = React.useState('2024');
 
     const filterChangeHandler = selectedYear => {
         setFilteredYear(selectedYear);

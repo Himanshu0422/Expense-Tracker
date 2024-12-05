@@ -24,3 +24,14 @@
 .new-expense_actions {
     text-align: right;
 }
+
+.invalid {
+    border-color: red;
+    background-color: #ffe6e6;
+}
+
+.error-text {
+    color: red;
+    font-size: 0.85rem;
+    margin-top: 0.2rem;
+}
